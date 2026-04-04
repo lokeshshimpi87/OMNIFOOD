@@ -1,0 +1,104 @@
+/* ======================== 
+- Note: These styles are just to pretty the basic page up a bit.
+You should ignore these when copying and pasting into your site 
+because your stylesheet should take care of making it look pretty!
+======================== 
+*/
+
+/* 1. Global Page Styles */
+body { 
+    padding: 2em; 
+    font: 100%/1.4 'Helvetica Neue', arial, helvetica, helve, sans-serif; 
+}
+
+h1 { 
+    font-size: 2.2em; 
+    padding: 0 0 .5em 0; 
+}
+
+h2 { 
+    font-size: 1.5em; 
+}
+
+.header { 
+    padding: 1em 0; 
+}
+
+/* 2. Base Grid Column Styling */
+.col { 
+    background: transparent; 
+    padding: 1em 0; 
+    text-align: center;
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%; /* Standard responsive grid gutter */
+}
+
+/* Remove margin from the first column in every row */
+.col:first-child { 
+    margin-left: 0; 
+}
+
+/* 3. Grid Row Clearfix (Required for .section .group structure) */
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.section {
+    clear: both;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+}
+
+/* 4. Column Span Calculations (Functional Logic) */
+
+/* Two Columns */
+.span_1_of_2 { width: 49.2%; }
+
+.span_2_of_3 { width: 60.12%; }
+
+/* Three Columns */
+.span_1_of_3 { width: 32.26%; }
+
+/* Four Columns */
+.span_1_of_4 { width: 23.8%; }
+
+/* Five Columns */
+.span_1_of_5 { width: 18.72%; }
+
+/* Six Columns */
+.span_1_of_6 { width: 15.33%; }
+
+/* Seven Columns */
+.span_1_of_7 { width: 12.91%; }
+
+/* Eight Columns */
+.span_1_of_8 { width: 11.1%; }
+
+/* Nine Columns */
+.span_1_of_9 { width: 9.7%; }
+
+/* Ten Columns */
+.span_1_of_10 { width: 8.56%; }
+
+/* Eleven Columns */
+.span_1_of_11 { width: 7.63%; }
+
+/* Twelve Columns */
+.span_1_of_12 { width: 6.86%; }
+
+/* 5. Basic Mobile Responsiveness */
+
+@media only screen and (max-width: 480px) {
+    .col { 
+        width: 100% !important; 
+        margin-left: 0; 
+    }
+}
